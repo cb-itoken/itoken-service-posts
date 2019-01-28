@@ -9,6 +9,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -56,6 +57,7 @@ public class PostsController {
             // 新增文章
             if(StringUtils.isBlank(tbPostsPost.getPostGuid())){
                 tbPostsPost.setPostGuid(UUID.randomUUID().toString());
+                tbPostsPost.setTimePublished(new Date());
                 result = postsService.insert(tbPostsPost, optsBy);
             }
 
