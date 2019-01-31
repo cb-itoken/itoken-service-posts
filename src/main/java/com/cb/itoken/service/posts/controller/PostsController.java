@@ -1,6 +1,5 @@
 package com.cb.itoken.service.posts.controller;
 
-import com.cb.itoken.common.domain.TbPostsPost;
 import com.cb.itoken.common.dto.BaseResult;
 import com.cb.itoken.common.utils.MapperUtils;
 import com.cb.itoken.service.posts.service.PostsService;
